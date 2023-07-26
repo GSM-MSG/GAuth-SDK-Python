@@ -27,8 +27,8 @@ def token_reissuance(refreshToken : str) -> str:
     response_json = response.content.decode("utf-8")
     return response_json
 
-def user_info(refreshToken : str) -> str:
+def user_info(accessToken : str) -> str:
     URL = open_url + "/user"
-    response = requests.get(URL, headers={"Authorization": "Bearer " + refreshToken})
+    response = requests.get(URL, headers={"Authorization": "Bearer " + accessToken})
     response_json = response.content.decode("utf-8")
     return response_json
