@@ -23,3 +23,9 @@ def token_reissuance(refreshToken : str) -> str:
     URL = server_url + "/oauth/token"
     response = requests.patch(URL, headers={"refreshToken" : "Bearer " + refreshToken})
     return response.content
+
+def user_info(refreshToken : str) -> str:
+    URL = open_url + "/user"
+    response = requests.get(URL, headers={"Authorization": "Bearer " + refreshToken})
+
+    return response.content
