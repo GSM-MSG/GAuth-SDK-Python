@@ -18,15 +18,17 @@ def token_issuance(code : str, clientId: str, clientSecret: str, redirectUri: st
                                         "clientId": clientId,
                                         "clientSecret": clientSecret,
                                         "redirectUri" : redirectUri})
-    return response.content
+    response_json = response.content.decode("utf-8")
+    return response_json
 
 def token_reissuance(refreshToken : str) -> str:
     URL = server_url + "/oauth/token"
     response = requests.patch(URL, headers={"refreshToken" : "Bearer " + refreshToken})
-    return response.content
+    response_json = response.content.decode("utf-8")
+    return response_json
 
 def user_info(refreshToken : str) -> str:
     URL = open_url + "/user"
     response = requests.get(URL, headers={"Authorization": "Bearer " + refreshToken})
-
-    return response.content
+    response_json = response.content.decode("utf-8")
+    return response_json
