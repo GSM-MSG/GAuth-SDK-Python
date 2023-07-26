@@ -1,6 +1,6 @@
 # GAuth-Python
 
->> 단 하나의 계정으로 모든 GSM의 서비스를 이용할 수 있게.
+> 단 하나의 계정으로 모든 GSM의 서비스를 이용할 수 있게.
 
 ```
       ___           ___           ___                       ___     
@@ -25,6 +25,9 @@
 // pip install gauth-python
 ```
 
+## Issue
+Git : [GitHub - GSM-MSG/GAuth-SDK-Python](https://github.com/GSM-MSG/GAuth-SDK-Python/issues)<br>
+Discord : dev_yohan05
 ## How to use
 ### Code 발급
 ```python

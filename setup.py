@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='gauth_python',
-    version='0.1.5',
+    version='0.1.7',
     description='Python sdk from Gauth.',
     long_description=long_description,
     long_description_content_type="text/markdown",
