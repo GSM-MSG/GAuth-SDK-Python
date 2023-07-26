@@ -56,7 +56,7 @@ token_issuance(
 from gauth_python.requests import token_reissuance
 
 token_reissuance(
-    Authorization = YOUR_REFRESH_TOKEN
+    refreshToken = YOUR_REFRESH_TOKEN
 )
 
 ```
@@ -67,6 +67,6 @@ token_reissuance(
 from gauth_python.requests import user_info
 
 user_info(
-   Authorization = YOUR_ACCESS_TOKEN
+   accessToken = YOUR_ACCESS_TOKEN
 )
 ```
