@@ -9,12 +9,13 @@ open_url = "https://open.gauth.co.kr/user"
 def code_issuance(email: str, password:str) -> str :
     URL = server_url + "/oauth/code"
     response = requests.post(URL, json={"email":email, "password" : password})
-    return response.content
+    response_json = response.content.decode("utf-8")
+    return response_json
 
 def token_issuance(code : str, clientId: str, clientSecret: str, redirectUri: str) -> str :
     URL = server_url + "/oauth/token"
     response = requests.post(URL, json={"code" : code,
-                                    "clientId": clientId,
+                                        "clientId": clientId,
                                         "clientSecret": clientSecret,
                                         "redirectUri" : redirectUri})
     return response.content
