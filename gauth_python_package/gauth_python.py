@@ -18,4 +18,8 @@ def token_issuance(code : str, clientId: str, clientSecret: str, redirectUri: st
                                         "clientSecret": clientSecret,
                                         "redirectUri" : redirectUri})
     return response.content
-    
+
+def token_reissuance(refreshToken : str) -> str:
+    URL = server_url + "/oauth/token"
+    response = requests.patch(URL, headers={"refreshToken" : "Bearer " + refreshToken})
+    return response.content
