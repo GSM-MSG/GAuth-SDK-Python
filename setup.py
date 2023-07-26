@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='gauth_python',
-    version='0.1.2',
+    version='0.1.5',
     description='Python sdk from Gauth.',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -20,8 +20,8 @@ setuptools.setup(
     author_email="dev.yohan05@gmail.com",
     author='Noh Gaseong',
     license='MIT',
-    install_requires=[],
-    setup_requires=['pytest-runner','requests'],
+    install_requires=['requests'],
+    setup_requires=['pytest-runner'],
     tests_require=['pytest==7.4.0'],
     test_suite='tests',
 )
