@@ -1,9 +1,9 @@
-from gauth_python_package.gauth_python import GAuthPython
+from gauth_python_package import requests
 import gauth_python_package
 
 def test_function():
-    assert GAuthPython.code_issuance("exampleString", "exampleString")
-    assert GAuthPython.token_issuance("exampleString","exampleString","exampleString","exampleString")
-    assert GAuthPython.token_reissuance()
-    assert GAuthPython.user_info()
+    assert requests.code_issuance("exampleString", "exampleString")
+    assert requests.token_issuance("exampleString","exampleString","exampleString","exampleString")
+    assert requests.token_reissuance()
+    assert requests.user_info()
 
