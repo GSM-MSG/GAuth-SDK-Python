@@ -26,8 +26,8 @@
 ```
 
 ## Issue
-Git : [GitHub - GSM-MSG/GAuth-SDK-Python](https://github.com/GSM-MSG/GAuth-SDK-Python/issues)<br>
-Discord : dev_yohan05
+Github : [GitHub - GSM-MSG/GAuth-SDK-Python](https://github.com/GSM-MSG/GAuth-SDK-Python/issues)<br>
+Discord : <a href = "https://discord.com/channels/@me/427080773456101376">dev_yohan05</a>
 ## How to use
 ### Code 발급
 ```python
