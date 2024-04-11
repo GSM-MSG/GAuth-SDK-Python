@@ -3,8 +3,8 @@ import requests
 global server_url
 global open_url
 
-server_url = "https://server.gauth.co.kr"
-open_url = "https://open.gauth.co.kr/user"
+server_url = "https://port-0-gauth-backend-85phb42bluutn9a7.sel5.cloudtype.app"
+open_url = "https://port-0-gauth-resource-server-71t02clq411q18.sel4.cloudtype.app/user"
     
 def code_issuance(email: str, password:str) -> str :
     URL = server_url + "/oauth/code"
